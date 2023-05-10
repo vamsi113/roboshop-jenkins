@@ -19,9 +19,14 @@
 
 
 - name: Include Multi Branch task File
-  ansible.builtin.import_tasks: mbranch.yml
+  ansible.builtin.include_tasks: mbranch.yml
   loop:
     - { name: "cart" }
+    - { name: "catalogue" }
+    - { name: "frontend" }
+    - { name: "user" }
+    - { name: "shipping" }
+    - { name: "payment" }
 
 
 
