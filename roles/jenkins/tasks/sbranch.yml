@@ -8,5 +8,5 @@
     config: "{{ lookup('file', '/tmp/sbranch.xml') }}"
     name: "terraform/{{item.name}}"
     password: DevOps321
-    url: http://172.31.13.27:8080
+    url: http://172.31.21.174:8080
     user: admin
