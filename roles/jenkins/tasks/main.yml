@@ -51,4 +51,4 @@
   ansible.builtin.include_tasks: sbranch.yml
   loop:
     - { name: "create-infra", repo: "roboshop-mutable-infra" }
-
+    - { name: "k8s-create-infra", repo: "roboshop-kubernetes-infra" }
