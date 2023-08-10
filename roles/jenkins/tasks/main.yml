@@ -50,5 +50,6 @@
 - name: Include Single Branch task File
   ansible.builtin.include_tasks: sbranch.yml
   loop:
-    - { name: "create-infra", repo: "roboshop-mutable-infra" }
-    - { name: "k8s-create-infra", repo: "roboshop-kubernetes-infra" }
+    - { name: "create-infra", repo: "roboshop-mutable-infra", dir: "terraform/"}
+    - { name: "k8s-create-infra", repo: "roboshop-kubernetes-infra", dir: "terraform/" }
+    - { name: "helm-chart-deploy", repo: "roboshop-helm-chart", dir: "/" }
