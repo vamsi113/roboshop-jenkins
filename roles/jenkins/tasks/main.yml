@@ -52,4 +52,4 @@
   loop:
     - { name: "create-infra", repo: "roboshop-mutable-infra", dir: "terraform/"}
     - { name: "k8s-create-infra", repo: "roboshop-kubernetes-infra", dir: "terraform/" }
-    - { name: "helm-chart-deploy", repo: "roboshop-helm-chart", dir: "/" }
+    - { name: "helm-chart-deploy", repo: "roboshop-helm-chart", dir: "" }
